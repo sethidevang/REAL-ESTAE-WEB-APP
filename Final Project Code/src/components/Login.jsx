@@ -17,7 +17,7 @@ const Login = () => {
             formData.append("email", email);
             formData.append("password", password);
             const data = {email, password};
-            const response = await axios.post("http://localhost:3000/login", data);
+            const response = await axios.post("https://real-estae-web-app-1.onrender.com/login", data);
             console.log(response);
             if(!response.data.success) {
                 alert(response.data.message);

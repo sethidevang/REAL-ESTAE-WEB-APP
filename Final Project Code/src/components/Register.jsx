@@ -22,7 +22,7 @@ const Register = () => {
             console.log("Requested...");
             
             const data = {name,email, password};
-            const response = await axios.post("http://localhost:3000/register", data);
+            const response = await axios.post("https://real-estae-web-app-1.onrender.com/register", data);
            
             if(!response.data.success) {
                 alert(response.data.message);
